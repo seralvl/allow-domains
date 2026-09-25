@@ -1,0 +1,53 @@
+name: Sync upstream
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Fast-forward from upstream
+        env:
+          UPSTREAM_REPOSITORY: itdoginfo/allow-domains
+        run: |
+          set -euo pipefail
+
+          git remote add upstream "https://github.com/${UPSTREAM_REPOSITORY}.git"
+          git fetch --prune upstream main
+
+          current_revision="$(git rev-parse HEAD)"
+          upstream_revision="$(git rev-parse upstream/main)"
+
+          if [ "$current_revision" = "$upstream_revision" ]; then
+            echo "Fork is already up to date."
+            exit 0
+          fi
+
+          if git merge-base --is-ancestor HEAD upstream/main; then
+            git merge --ff-only upstream/main
+            git push origin HEAD:main
+            exit 0
+          fi
+
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "Fork contains commits that are not in upstream; no sync is required."
+            exit 0
+          fi
+
+          echo "Fork and upstream have diverged; refusing to overwrite fork changes." >&2
+          exit 1
