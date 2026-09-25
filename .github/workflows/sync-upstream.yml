@@ -38,16 +38,15 @@ jobs:
             exit 0
           fi
 
-          if git merge-base --is-ancestor HEAD upstream/main; then
-            git merge --ff-only upstream/main
-            git push origin HEAD:main
-            exit 0
-          fi
-
           if git merge-base --is-ancestor upstream/main HEAD; then
             echo "Fork contains commits that are not in upstream; no sync is required."
             exit 0
           fi
 
-          echo "Fork and upstream have diverged; refusing to overwrite fork changes." >&2
-          exit 1
+          if git merge-base --is-ancestor HEAD upstream/main; then
+            git merge --ff-only upstream/main
+          else
+            git merge --no-edit upstream/main
+          fi
+
+          git push origin HEAD:main
