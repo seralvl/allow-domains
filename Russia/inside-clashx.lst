@@ -64,6 +64,8 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,anthropic.qualtrics.com
 DOMAIN-SUFFIX,any.do
 DOMAIN-SUFFIX,aol.com
+DOMAIN-SUFFIX,ap-img.static.pub
+DOMAIN-SUFFIX,ap-ss.static.pub
 DOMAIN-SUFFIX,api.jetbrains.ai
 DOMAIN-SUFFIX,api.service-kp.com
 DOMAIN-SUFFIX,api.theins.info
@@ -127,6 +129,7 @@ DOMAIN-SUFFIX,bufferbloat.net
 DOMAIN-SUFFIX,builds.parsec.app
 DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,c1-ofp.static.pub
 DOMAIN-SUFFIX,canva.com
 DOMAIN-SUFFIX,canva.dev
 DOMAIN-SUFFIX,capacitorjs.com
@@ -478,6 +481,7 @@ DOMAIN-SUFFIX,istories.media
 DOMAIN-SUFFIX,itch.io
 DOMAIN-SUFFIX,itninja.com
 DOMAIN-SUFFIX,itsmycity.ru
+DOMAIN-SUFFIX,j1-ofp.static.pub
 DOMAIN-SUFFIX,jamf.com
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,jetbrains.space
@@ -529,6 +533,9 @@ DOMAIN-SUFFIX,le-production.tv
 DOMAIN-SUFFIX,leafletjs.com
 DOMAIN-SUFFIX,legalshield.com
 DOMAIN-SUFFIX,lenovo.com
+DOMAIN-SUFFIX,lenovo.com.cn
+DOMAIN-SUFFIX,lenovoclouddeploy.com
+DOMAIN-SUFFIX,lenovopartnerhub.com
 DOMAIN-SUFFIX,lgeapi.com
 DOMAIN-SUFFIX,lgthinq.com
 DOMAIN-SUFFIX,lib.rus.ec
@@ -706,6 +713,10 @@ DOMAIN-SUFFIX,ovd.legal
 DOMAIN-SUFFIX,ovd.news
 DOMAIN-SUFFIX,ovdinfo.org
 DOMAIN-SUFFIX,ozodi.org
+DOMAIN-SUFFIX,p1-ofp.static.pub
+DOMAIN-SUFFIX,p2-ofp.static.pub
+DOMAIN-SUFFIX,p3-ofp.static.pub
+DOMAIN-SUFFIX,p4-ofp.static.pub
 DOMAIN-SUFFIX,paddle.com
 DOMAIN-SUFFIX,paddlestatus.com
 DOMAIN-SUFFIX,pages.dev

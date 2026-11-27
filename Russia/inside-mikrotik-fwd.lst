@@ -64,6 +64,8 @@
 /ip dns static add name=anthropic.qualtrics.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=any.do type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=aol.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=ap-img.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=ap-ss.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.jetbrains.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.service-kp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.theins.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -127,6 +129,7 @@
 /ip dns static add name=builds.parsec.app type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=buymeacoffee.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=byteoversea.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=c1-ofp.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=canva.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=canva.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=capacitorjs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -478,6 +481,7 @@
 /ip dns static add name=itch.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=itninja.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=itsmycity.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=j1-ofp.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=jamf.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=jetbrains.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=jetbrains.space type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -529,6 +533,9 @@
 /ip dns static add name=leafletjs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=legalshield.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lenovo.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=lenovo.com.cn type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=lenovoclouddeploy.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=lenovopartnerhub.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lgeapi.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lgthinq.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lib.rus.ec type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -706,6 +713,10 @@
 /ip dns static add name=ovd.news type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ovdinfo.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ozodi.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=p1-ofp.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=p2-ofp.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=p3-ofp.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=p4-ofp.static.pub type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=paddle.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=paddlestatus.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pages.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
